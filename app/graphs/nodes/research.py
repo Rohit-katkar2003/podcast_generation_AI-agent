@@ -1,8 +1,7 @@
 from app.graphs.state import AgentState 
 from app.tool.travily_search import initialize_web_search_tool
-from app.utils.config import gen_response
 
-
+from app.utils.helper import generate_response
 
 
 def research_node(state:AgentState): 
@@ -10,6 +9,7 @@ def research_node(state:AgentState):
 
     search_results = initialize_web_search_tool(topic=topic , max_result=5) 
 
+    print("🤔🤔 search results: \n", search_results)
     # Step 2: Extract clean text from results
     sources_text = "\n\n".join([
         f"Title: {res['title']}\nURL: {res['url']}\nSummary: {res['content']}"
@@ -33,5 +33,5 @@ def research_node(state:AgentState):
     Output in clear, structured plain text. Do NOT mention sources or URLs.
     """
 
-    response = gen_response(prompt) 
-    return {"research_notes": response.content}
+    response = generate_response(u_model_inp=state['u_model_inp'] , prompt=prompt)
+    return {"research_notes": response}

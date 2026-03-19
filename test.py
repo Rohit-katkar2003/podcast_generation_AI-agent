@@ -1,4 +1,15 @@
-from app.utils.config import LLM 
-from app.utils.config import gen_response
+# from app.utils.config import LLM 
+from app.utils.config import APP 
 
-print(gen_response("hi  how are you "))
+
+response = APP.invoke({
+    "topic": "podcast between Rohit and Priya how to take call of IT job",
+    "u_model_inp": "router_model"
+})
+
+print(response) 
+print(response.keys())  
+
+with open("script.txt" , "w") as f: 
+    f.write(response["final_script"]) 
+

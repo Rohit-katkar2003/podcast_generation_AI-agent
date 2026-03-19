@@ -1,5 +1,7 @@
 from tavily import TavilyClient 
-from app.utils.config import TRAVILY_CLIENT
+from app.utils.env import TRAVILY_API_KEY
+
+TRAVILY_CLIENT = TavilyClient(api_key=TRAVILY_API_KEY)  
 
 
 def initialize_web_search_tool(topic , max_result=5):

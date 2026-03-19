@@ -1,4 +1,6 @@
 from app.graphs.state import AgentState
+from app.utils.helper import generate_response
+
 
 def editor_node(state: AgentState):
     prompt = f"""
@@ -13,5 +15,5 @@ def editor_node(state: AgentState):
 
     Output the improved version only.
     """
-    response = llm.invoke(prompt)
-    return {"edited_script": response.content}
+    response = generate_response(u_model_inp=state['u_model_inp'] , prompt=prompt , temperature=0.2)
+    return {"edited_script": response}

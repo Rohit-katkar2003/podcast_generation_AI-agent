@@ -1,7 +1,11 @@
 
 from app.graphs.state import AgentState 
+from app.utils.helper import generate_response 
 
-def scriptwriter_node(state: AgentState):
+def scriptwriter_node(state: AgentState): 
+
+    print("STATE IN SCRIPTWRITER:", state)
+
     prompt = f"""
     You are a professional podcast scriptwriter.
     Using these research notes:
@@ -20,5 +24,5 @@ def scriptwriter_node(state: AgentState):
 
     Keep tone conversational and energetic.
     """
-    response = llm.invoke(prompt)
-    return {"raw_script": response.content}
+    response =  generate_response(u_model_inp=state['u_model_inp'] , prompt=prompt)  
+    return {"raw_script": response}

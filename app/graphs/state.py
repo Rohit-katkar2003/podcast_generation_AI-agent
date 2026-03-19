@@ -1,11 +1,12 @@
-from typing import TypedDict , Annotated 
-from langgraph.graph import StateGraph  
+from typing import TypedDict, Annotated
+import operator
 
-class AgentState(TypedDict): 
-    topic : str 
-    research_nodes : str 
-    raw_script : str 
-    edited_script : str 
-    final_script : str 
-    audio_files : list[str] 
+class AgentState(TypedDict, total=False): 
+    topic: str
+    
+    research_notes: Annotated[str, operator.add]   # ✅ FIXED NAME
+    raw_script: Annotated[str, operator.add] 
+    edited_script: Annotated[str, operator.add] 
+    final_script: Annotated[str, operator.add] 
 
+    u_model_inp: str

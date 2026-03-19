@@ -1,11 +1,12 @@
 import requests
 import json
 import os 
-from app.utils.config import OPENROUTER_API_KEY
-
+from app.utils.env import OPENROUTER_API_KEY
 
 # First API call with reasoning
-def gen_response(prompt): 
+def gen_response(prompt):  
+    print("✅ Router model used .... !") 
+
     response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={

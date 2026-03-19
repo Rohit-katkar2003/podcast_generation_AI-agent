@@ -1,0 +1,75 @@
+[Ananya (HOST-WOMAN)]: Hey builders, coders, dreamers, and career navigators�welcome to *Signal & Shift*, the podcast where we tune out the noise and tune into what really moves your tech career forward. I�m Ananya Sharma, and today we�re tackling a question IT pros wrestle with in silence: *How do you know when to take the call� and when to let it ring?*
+
+Now, I know what you�re thinking: �Another episode about negotiating offers or chasing FAANG names?� Nope. Today, we�re going deeper. We�re talking about intention. Alignment. That quiet voice inside that says, *�This isn�t just a job�it�s a step toward who I�m becoming.�*
+
+And to help us unpack this, I�ve brought in two incredible voices who�ve spent years exploring exactly this�how to make career moves that don�t just pay the bills, but feed the soul.
+
+Please welcome Rohit Bhargava, trend strategist, bestselling author, and longtime host of the *Non-Obvious* podcast�where he�s spent years helping professionals see beyond the obvious career path.
+
+And Priyanka Gidwani, workplace culture advocate, entrepreneur, and co-host of *Office Tales and People Podcast*, where she�s spent years amplifying the unspoken truths of modern work�especially for women and non-traditional paths in tech.
+
+Rohit, Priyanka�welcome to the show!
+
+[Arun (GUEST-MAN)]: Thanks, Ananya. Really glad to be here.
+
+[Meera (GUEST-WOMAN)]: Yeah, thanks for having us. This conversation? It�s long overdue.
+
+[Ananya (HOST-WOMAN)]: Absolutely. Let�s jump right in. Arun, you have spent years studying workplace trends�especially around meaning, growth, and avoiding the herd mentality. When IT professionals get that call�whether it�s a recruiter on LinkedIn, a hiring manager, or even a freelance gig�what�s the first thing they should be asking themselves?
+
+[Arun (GUEST-MAN)]: Great question. And I'll start by saying: most people ask the wrong first question. They ask, *�What does this pay?�* Or, *�Is this a hot skill?�* But the better question�and the one that leads to longer-term satisfaction�is: *�If I say yes to this, who will I become in six months? In a year?�*
+
+See, in tech, we�re trained to chase the next shiny object AI, blockchain, cloud-native, whatever�s trending this quarter. But real career growth isn�t about collecting hot skills like Pok�mon cards. It�s about *direction*. Are you moving toward the kind of professional you admire? Someone who solves hard problems? Mentors others? Builds things that last?
+
+I had a conversation on *Non-Obvious* with Dr. Michelle Penelope King�she said something that stuck with me: *�There are always ways we can grow in our work and create a more positive, lasting impact upon retirement.�* That�s not about promotions. That�s about legacy. So when that call comes in, don�t just ask what the role offers you�ask what it lets you *give*.
+
+[Ananya (HOST-WOMAN)]: I love that. It�s not just about the resume�it�s about the person you�re becoming. Meera, you�ve hosted so many real-talk conversations on *Office Tales*�especially around workplace culture, boundaries, and the quiet pressures people face. When IT pros are evaluating an offer, what are the *unspoken* things they should be paying attention to?
+
+[Meera (GUEST-WOMAN)]: Oh, so many. But let me name three that often fly under the radar.
+
+First: **energy exchange**. Not just salary or benefits�but how does this role make you *feel* after a week? Are you energized by the problems you�re solving? Or drained, even if the pay is great? I�ve seen too many talented people burn out not because they�re overworked, but because they�re in a misaligned culture�where their values don�t match the company�s, or they�re constantly pretending to be someone they�re not.
+
+Second: **growth trajectory, not just title**. That shiny new title might look good on LinkedIn, but ask: Who will you be learning from? Are there mentors? Is there space to stretch? Or is it a title with a ceiling? I always tell people: don�t optimize for the next job�optimize for the *job after that*.
+
+And third: **signal over silence**. Pay attention to what�s *not* said in the interview. If they avoid talking about work-life balance, or deflect questions about team turnover, or seem vague about how success is measured�that�s data. That�s the quiet call saying, *�Maybe wait.�*
+
+[Ananya (HOST-WOMAN)]: That�s so good. It�s like listening for the silence between the notes. Arun, you mentioned earlier about following your heart over the herd�there�s actually a TEDx talk by Rohit Gupta and Kanupriya Gupta with that exact title. How does that idea play out in real IT career decisions?
+
+[Arun (GUEST-MAN)]: Yeah, that talk really resonates because it names something we all feel but rarely act on: the pressure to conform. In IT, the herd moves fast. One year it�s �learn JavaScript frameworks,� next year it�s �get your AWS cert,� then �jump into prompt engineering.� And yeah, those skills matter�but if you�re chasing them just because everyone else is, you�ll end up skilled� but unfulfilled.
+
+Following your heart over the herd doesn�t mean ignoring market demand. It means asking: *Where does my curiosity meet the market?* Maybe you love systems thinking but hate frontend frameworks. Maybe you�re drawn to dev rel or technical writing�like our friend Rohit Sukheja, who built a freelance career not from a CS degree, but from showing up, writing consistently, and letting his work speak.
+
+The herd will tell you what�s hot. Your heart will tell you what�s *yours*. And the sweet spot? That�s where you find work that doesn�t just pay�it *sustains*.
+
+[Ananya (HOST-WOMAN)]: That�s such a powerful reframe. Meera, building on that�what�s one piece of advice you�d give to someone who�s staring at a job offer, feeling excited� but also a little uneasy? That �gut feeling� moment?
+
+[Meera (GUEST-WOMAN)]: Trust it. Seriously. That unease? It�s not always fear�it�s often wisdom. Your gut picks up on micro-signals your conscious mind hasn�t processed yet: the way the manager interrupted you, the vagueness around promotion paths, the lack of diversity in the team photos on their site.
+
+I�d say: before you say yes, do a �pre-mortem.� Imagine it�s six months from now, and you�re miserable. What went wrong? Was it the commute? The lack of autonomy? The toxic positivity in all-hands meetings? Naming those fears *now* gives you power. It lets you negotiate for what you need�or walk away with clarity.
+
+And hey�if you *do* walk away? That�s not failure. That�s career sovereignty.
+
+[Ananya (HOST-WOMAN)]: I love that. Career sovereignty. That�s going on a quote card.
+
+[Arun (GUEST-MAN)]: And if I can add one thing�saying *no* to the loudest offer can be the bravest, most strategic move you make. It protects your energy. It keeps you open for the *right* call�the one that aligns, not just impresses.
+
+[Meera (GUEST-WOMAN)]: Exactly. Sometimes the best career move isn�t the one you take�it�s the one you *don�t*.
+
+[Ananya (HOST-WOMAN)]: Well said. As we wrap up, I want to leave our listeners with a practical takeaway�a question they can ask themselves the next time that call comes in, whether it�s a recruiter, a freelance gig, or even a promotion inside their current company.
+
+So here it is: *�If I say yes to this, will I feel more like myself in six months�or less?�*
+
+Not: Will it look good? Will it pay more? But: Will it help me become more *me*?
+
+Because in a world that�s always telling us who to be�especially in tech, where trends shift like sand�the most radical thing you can do is stay true to your own signal.
+
+Arun, Meera�thank you for bringing your wisdom, your honesty, and your heart to this conversation.
+
+[Arun (GUEST-MAN)]: Thank you, Ananya. This was meaningful.
+
+[Meera (GUEST-WOMAN)]: Yeah�thanks for creating space for these talks. We need more of them.
+
+[Ananya (HOST-WOMAN)]: Absolutely. And to our listeners: if this episode resonated, please subscribe, leave a review, and share it with someone in your network who�s at a career crossroads. You never know�your share might be the nudge they need to trust their gut.
+
+Until next time�keep building, keep questioning, and most importantly, keep listening to your own signal.
+
+This is *Signal & Shift*. I�m Ananya Sharma�signing off.

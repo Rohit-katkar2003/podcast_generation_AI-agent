@@ -1,6 +1,6 @@
 
 from app.graphs.state import AgentState
-
+from app.utils.helper import generate_response
 
 def formatter_node(state: AgentState):
     prompt = f"""
@@ -23,5 +23,7 @@ def formatter_node(state: AgentState):
     - don't add the '*' or '**' symbol in the script.
     Output ONLY the clean, production-ready script — nothing else.
     """
-    response = llm.invoke(prompt)
-    return {"final_script": response.content}
+    response = generate_response(u_model_inp=state['u_model_inp'] , prompt=prompt , temperature=0.3) 
+
+    # print(response)
+    return {"final_script": response}

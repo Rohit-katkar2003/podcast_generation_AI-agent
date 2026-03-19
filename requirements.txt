@@ -8,3 +8,7 @@ langchain-openai
 tavily-python 
 wikipedia 
 google-generativeai
+kokoro>=0.9.4
+soundfile
+gradio>=4.44.0
+pydub

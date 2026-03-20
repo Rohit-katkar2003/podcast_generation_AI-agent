@@ -29,8 +29,8 @@ def Agent_main_workflow():
 
     png_bytes = app.get_graph().draw_mermaid_png()
 
-    with open("Agent_workflow.png", "wb") as f:
-        f.write(png_bytes) 
+    # with open("Agent_workflow.png", "wb") as f:
+    #     f.write(png_bytes) 
 
 
     return app

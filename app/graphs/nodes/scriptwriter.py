@@ -4,7 +4,7 @@ from app.utils.helper import generate_response
 
 def scriptwriter_node(state: AgentState): 
 
-    print("STATE IN SCRIPTWRITER:", state)
+    # print("STATE IN SCRIPTWRITER:", state)
 
     prompt = f"""
     You are a professional podcast scriptwriter.

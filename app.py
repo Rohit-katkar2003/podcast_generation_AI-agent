@@ -1,25 +1,35 @@
-import gradio as gr
-from app.utils.config import APP
-from app.tool.podcast_generator import generate_podcast
+import sys
+import asyncio
 
-def generate(topic, model_choice, bg_audio):
-    if not topic.strip():
-        return None, "⚠️ Please enter a topic."
-    result = APP.invoke({"topic": topic.strip(), "u_model_inp": model_choice})
-    if not result or "final_script" not in result:
-        return None, "❌ Script generation failed."
-    audio_path = generate_podcast(response=result["final_script"], bg_audio_file=bg_audio)
-    return audio_path, "✅ Podcast ready!"
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-with gr.Blocks(title="AI Podcast Generator") as demo:
-    gr.Markdown("# 🎙️ AI Podcast Generator")
-    with gr.Row():
-        topic = gr.Textbox(label="Topic", placeholder="e.g. Future of Quantum Computing")
-        model = gr.Radio(["gemini_model", "router_model"], label="Model", value="gemini_model")
-    music = gr.Audio(label="Background Music (optional)", type="filepath")
-    btn = gr.Button("Generate Podcast 🚀", variant="primary")
-    output_audio = gr.Audio(label="Your Podcast")
-    status = gr.Textbox(label="Status")
-    btn.click(generate, inputs=[topic, model, music], outputs=[output_audio, status])
+import threading
+import uvicorn
+import os
+import logging
+logging.getLogger("asyncio").setLevel(logging.CRITICAL)
 
-demo.launch()
+from fastapi import FastAPI
+from app.apis.routes import router
+
+app = FastAPI()
+app.include_router(router=router, prefix="/api/v1")
+
+def run_fastapi():
+    uvicorn.run(app=app, host="0.0.0.0", port=8000,
+                loop="asyncio", lifespan="off")
+
+if __name__ == "__main__":
+    t1 = threading.Thread(target=run_fastapi, daemon=True)
+    t1.start()
+
+    # Run streamlit directly in main process — no subprocess
+    from streamlit.web import cli as stcli
+    sys.argv = [
+        "streamlit", "run", "streamlit_ui.py",
+        "--server.port=7860",
+        "--server.address=0.0.0.0",
+        "--server.headless=true"
+    ]
+    stcli.main()

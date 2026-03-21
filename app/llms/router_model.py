@@ -26,7 +26,8 @@ def gen_response(prompt):
     )
 
     # Extract the assistant message with reasoning_details
-    response = response.json()
+    response = response.json() 
+    print(response)
     response = response['choices'][0]['message']
 
     return response['content']

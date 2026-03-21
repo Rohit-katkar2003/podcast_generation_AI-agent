@@ -6,7 +6,7 @@ load_dotenv()
 
 from app.utils.env import GEMINI_API_KEY
 
-print(GEMINI_API_KEY)
+# print(GEMINI_API_KEY)
 def initialize_LLM(model_name = "gemini-2.0-flash-lite" , temperature=0.2 , max_output_token = 2048 ): 
     llm = ChatGoogleGenerativeAI(
         model=model_name,  # Confirm exact name via Google AI Studio

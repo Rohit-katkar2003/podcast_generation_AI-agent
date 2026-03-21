@@ -9,7 +9,7 @@ def research_node(state:AgentState):
 
     search_results = initialize_web_search_tool(topic=topic , max_result=5) 
 
-    print("🤔🤔 search results: \n", search_results)
+    # print("🤔🤔 search results: \n", search_results)
     # Step 2: Extract clean text from results
     sources_text = "\n\n".join([
         f"Title: {res['title']}\nURL: {res['url']}\nSummary: {res['content']}"

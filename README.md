@@ -44,7 +44,7 @@ After the LangGraph part finishes, the final script moves into the audio pipelin
 ![Agent Workflow](./Agent_workflow.png)
 
 ## Project workflow 
-![Project Workflow](./project_flow.png)
+![Project Workflow](./project_flw.png)
 
 ## Sample Podcast
 

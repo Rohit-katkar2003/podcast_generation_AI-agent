@@ -15,5 +15,5 @@ def editor_node(state: AgentState):
 
     Output the improved version only.
     """
-    response = generate_response(u_model_inp=state['u_model_inp'] , prompt=prompt , temperature=0.2)
+    response = generate_response(u_model_inp=state['u_model_inp'] ,api_key=state.get('api_key') ,  prompt=prompt , temperature=0.2)
     return {"edited_script": response}

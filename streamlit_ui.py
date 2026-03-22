@@ -30,7 +30,7 @@ html, body, [class*="css"] {
 }
 .hero h1 {
     font-family: 'Syne', sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     letter-spacing: -1px;
     background: linear-gradient(135deg, #e2e8f0 0%, #a78bfa 50%, #38bdf8 100%);
@@ -41,7 +41,7 @@ html, body, [class*="css"] {
 }
 .hero p {
     color: #64748b;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     margin: 0;
     letter-spacing: 0.5px;
@@ -59,7 +59,7 @@ html, body, [class*="css"] {
 /* ── Section labels ── */
 .label {
     font-family: 'Syne', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ html, body, [class*="css"] {
     border-radius: 12px !important;
     color: #e2e8f0 !important;
     font-family: 'DM Sans', sans-serif !important;
-    font-size: 0.95rem !important;
+    font-size: 1.05rem !important;
     resize: none !important;
 }
 .stTextArea textarea:focus {
@@ -91,7 +91,7 @@ html, body, [class*="css"] {
     border-radius: 50px !important;
     padding: 6px 20px !important;
     color: #64748b !important;
-    font-size: 0.85rem !important;
+    font-size: 0.95rem !important;
     font-weight: 500 !important;
     cursor: pointer;
     transition: all 0.2s !important;
@@ -116,7 +116,7 @@ html, body, [class*="css"] {
     border-radius: 50px !important;
     color: #fff !important;
     font-family: 'Syne', sans-serif !important;
-    font-size: 0.95rem !important;
+    font-size: 1.1rem !important;
     font-weight: 700 !important;
     padding: 0.65rem 2rem !important;
     letter-spacing: 0.5px;
@@ -171,7 +171,7 @@ html, body, [class*="css"] {
     background: rgba(124,111,247,0.08);
 }
 .example-card .ex-num {
-    font-size: 0.65rem;
+    font-size: 0.81rem;
     font-weight: 700;
     letter-spacing: 1.5px;
     color: #7c6ff7;
@@ -179,7 +179,7 @@ html, body, [class*="css"] {
     margin-bottom: 4px;
 }
 .example-card .ex-topic {
-    font-size: 0.82rem;
+    font-size: 0.99rem;
     color: #cbd5e1;
     font-weight: 400;
     line-height: 1.3;
@@ -301,6 +301,22 @@ def run_ui():
             label_visibility="collapsed"
         )
 
+        api_key = None
+
+        if model_choice == "router_model":
+            api_key = st.text_input(
+                "🔑 Enter OpenRouter API Key",
+                type="password",
+                placeholder="sk-xxxx..."
+            )
+
+        elif model_choice == "gemini_model":
+            api_key = st.text_input(
+                "🔑 Enter Gemini API Key",
+                type="password",
+                placeholder="AIza..."
+            )
+
         st.markdown("<div style='height:4px'></div>", unsafe_allow_html=True)
 
         # Upload music
@@ -406,7 +422,8 @@ def run_ui():
 
                     result = APP.invoke({
                         "topic": topic_val,
-                        "u_model_inp": model_choice
+                        "u_model_inp": model_choice , 
+                        "api_key" : api_key
                     })
 
                     if not result or "final_script" not in result:
@@ -434,7 +451,7 @@ def run_ui():
                     import traceback
                     full_error = traceback.format_exc()
                     print(f"[ERROR] Full traceback:\n{full_error}")
-                    st.session_state.status_msg = ("error", f"❌ Error: {str(e)}\n\nCheck terminal for full traceback.")
+                    st.session_state.status_msg = ("error", f"❌ Error: {str(e)}")
                     st.rerun()
 
 

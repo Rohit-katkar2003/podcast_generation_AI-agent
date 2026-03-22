@@ -33,5 +33,5 @@ def research_node(state:AgentState):
     Output in clear, structured plain text. Do NOT mention sources or URLs.
     """
 
-    response = generate_response(u_model_inp=state['u_model_inp'] , prompt=prompt)
+    response = generate_response(u_model_inp=state['u_model_inp'] ,api_key=state.get('api_key') ,  prompt=prompt)
     return {"research_notes": response}

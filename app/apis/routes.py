@@ -18,6 +18,7 @@ async def gen_podcast(pod:gen_podcast):
     pod_topic = pod.topic 
     pod_u_model= pod.u_model_inp 
     background_music = pod.audio_file 
+    api_key = pod.api_key 
 
     try : 
         if  not pod_topic and pod_topic.strip() :  
@@ -27,10 +28,14 @@ async def gen_podcast(pod:gen_podcast):
                 status_code=status.HTTP_400_BAD_REQUEST
             ) 
               
-        topic = pod_topic.strip()
+        topic = pod_topic.strip() 
+        if pod_u_model in ["router_model" , "gemini_model"]:  
+            return f"give the API key for {pod_u_model} then only u can use "
+        
         result = APP.invoke({
             "topic": topic ,
-            "u_model_inp": pod_u_model 
+            "u_model_inp": pod_u_model  , 
+            "api_key" : None
         })  
         
         if not result or "final_script" not in result:

@@ -23,7 +23,7 @@ def formatter_node(state: AgentState):
     - don't add the '*' or '**' symbol in the script.
     Output ONLY the clean, production-ready script — nothing else.
     """
-    response = generate_response(u_model_inp=state['u_model_inp'] , prompt=prompt , temperature=0.3) 
+    response = generate_response(u_model_inp=state['u_model_inp'] ,api_key=state.get('api_key') ,  prompt=prompt , temperature=0.3) 
 
     # print(response)
     return {"final_script": response}

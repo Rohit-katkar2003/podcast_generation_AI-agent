@@ -1,16 +1,15 @@
 import requests
 import json
 import os 
-from app.utils.env import OPENROUTER_API_KEY
 
 # First API call with reasoning
-def gen_response(prompt):  
+def gen_response(prompt , api_key):  
     print("✅ Router model used .... !") 
-
+    print("API key : " , api_key)
     response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
-        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
     },
     data=json.dumps({

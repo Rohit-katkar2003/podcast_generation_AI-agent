@@ -24,5 +24,5 @@ def scriptwriter_node(state: AgentState):
 
     Keep tone conversational and energetic.
     """
-    response =  generate_response(u_model_inp=state['u_model_inp'] , prompt=prompt)  
+    response =  generate_response(u_model_inp=state['u_model_inp'],api_key=state.get('api_key') , prompt=prompt)  
     return {"raw_script": response}

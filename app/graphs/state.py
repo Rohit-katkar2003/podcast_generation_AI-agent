@@ -9,4 +9,5 @@ class AgentState(TypedDict, total=False):
     edited_script: Annotated[str, operator.add] 
     final_script: Annotated[str, operator.add] 
 
-    u_model_inp: str
+    u_model_inp: str 
+    api_key : str

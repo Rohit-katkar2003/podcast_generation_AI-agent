@@ -36,7 +36,7 @@ def generate_podcast(response, bg_audio_file):
 
         sr, audio = audio_data
 
-        filename = f"temp_{uuid.uuid4().hex}_{i}.wav"
+        filename = os.path.join(TEMP_DIR , f"temp_{uuid.uuid4().hex}_{i}.wav")
         sf.write(filename, audio, sr)
 
         temp_files.append(filename)

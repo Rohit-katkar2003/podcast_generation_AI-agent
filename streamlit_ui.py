@@ -245,8 +245,8 @@ EXAMPLES = [
     },
     {
         "num": "03",
-        "topic": "What is ML and its types",
-        "audio": os.path.abspath("outputs/podcast_cb6e9894df334be289ad17a2ad3f92c9.wav"),
+        "topic": "What is AI/ML and its types",
+        "audio": os.path.abspath("outputs/podcast_bg_8ecefb79acda42db85db3712287b34e6.wav"),
     },
 ]
 

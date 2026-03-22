@@ -63,17 +63,15 @@ Place the workflow diagram right after the `Simple Flow` section in this README.
 
 Use the existing image like this:
 
-```md
+
 ## Agent Workflow Diagram
 
 ![Agent Workflow](./Agent_workflow.png)
-```
 
-```md
+
 ## Project flow 
 ![Project Workflow](./project_flow.png)
 
-``` 
 
 ## Project Flow Explanation
 

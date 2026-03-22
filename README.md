@@ -46,6 +46,10 @@ After the LangGraph part finishes, the final script moves into the audio pipelin
 ## Project workflow 
 ![Project Workflow](./project_flow.png)
 
+## Sample Podcast
+
+- `Topic:` Explain the Iran-US conflict
+- `Audio:` [final_podcast.wav](./assets/generated%20podcast/final_podcast.wav)
 
 ## Project Flow Explanation
 

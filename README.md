@@ -37,39 +37,13 @@ After the LangGraph part finishes, the final script moves into the audio pipelin
 
 `final_script -> Kokoro TTS -> multi-voice audio -> background music -> final podcast`
 
-## Simple Flow
-
-Here is the full flow in a very human way:
-
-`user_topic -> web scraped data using Tavily -> research notes -> scriptwriter -> editor -> formatter -> final_script -> Kokoro -> multi_voice audio -> background_music -> podcast delivered`
-
-### Step-by-step explanation
-
-1. The user enters a topic.
-2. Tavily searches the web to collect fresh, real-time information.
-3. The `researcher` node turns those search results into useful research notes.
-4. The `scriptwriter` node creates a full podcast-style script.
-5. The `editor` node improves the pacing, clarity, and engagement.
-6. The `formatter` node converts the script into a clean recording-ready script with speaker labels.
-7. The final script is sent to `Kokoro TTS`.
-8. Kokoro creates audio for each speaker using different voices.
-9. The audio clips are merged into one multi-voice podcast.
-10. Optional background music is added.
-11. The final podcast is saved in the `outputs/` folder.
-
-## Where To Place The Diagram
-
-Place the workflow diagram right after the `Simple Flow` section in this README.
-
-Use the existing image like this:
 
 
 ## Agent Workflow Diagram
 
 ![Agent Workflow](./Agent_workflow.png)
 
-
-## Project flow 
+## Project workflow 
 ![Project Workflow](./project_flow.png)
 
 

@@ -24,7 +24,7 @@ if __name__ == "__main__":
     t1 = threading.Thread(target=run_fastapi, daemon=True)
     t1.start()
 
-    # Run streamlit directly in main process — no subprocess
+    ### Run streamlit directly in main process — no subprocess
     from streamlit.web import cli as stcli
     sys.argv = [
         "streamlit", "run", "streamlit_ui.py",
